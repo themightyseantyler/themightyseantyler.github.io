@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="custom.css">
+    <!-- jQuery library -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+ <div class="container"> 
+<hr class="style1">
+ </div>
+ <div class="container">
+   <div class="row">
+     <div class="col-3">
+       <div class="mt-2"></div>
+       <div align="center">
+	 <button id="allSel" type="button" class="btn btn-dark checkAll">Select all</button>
+       </div>
+     </div>
+     <div class="col-6">
+       <h2 class="small" align="center">Tense Selection</h2>
+     </div>
+     <div class="col3"> </div>
+   </div>
+ </div>
+       
+ <div class="container">
+   <hr class="style1">
+ </div>
+ 
+ 
+ <div class="container">
+   <div class="row">
+     <div class="col-1"> </div>
+     <div class="col-3">
+       <h3 class="small">Indicative</h3>
+       <div class="checkbox">
+	 <div class="checkbox">
+	   <label><input type="checkbox" class="parent" data-group=".group1" /> Select all</label>
+	 </div>
+	 <div class="checkbox">
+	   <label><input id="ind-present" type="checkbox" class="group1" name="check[]"> Present</label>
+	   </div>
+	 <div class="checkbox">
+	   <label><input id="ind-preterite" type="checkbox" class="group1" name="check[]"> Preterite</label>
+	   </div>
+	 <div class="checkbox">
+	   <label><input id="ind-imperfect" type="checkbox" class="group1" name="check[]"> Imperfect</label>
+	   </div>
+	 <div class="checkbox">
+	   <label><input id="ind-conditional" type="checkbox" class="group1" name="check[]"> Conditional</label>
+	   </div>
+	 <div class="checkbox">
+	   <label><input id="ind-future" type="checkbox" class="group1" name="check[]"> Future</label>
+	 </div>
+	 </div>
+     </div>
+     <div class="col-1"> </div>
+     <div class="col-3">
+       <h3 class="small">Subjunctive</h3>
+       <div class="checkbox">
+	 <label><input type="checkbox" class="parent" data-group=".group2" /> Select all</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="sub-present" type="checkbox" value="" class="group2" name="check[]" > Present</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="sub-imperfect" type="checkbox" value="" class="group2" name="check[]"> Imperfect</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="sub-imperfect2" type="checkbox" value="" class="group2" name="check[]"> Imperfect 2</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="sub-future" type="checkbox" value="" class="group2" name="check[]"> Future</label>
+       </div>
+     </div>
+     <div class="col-1"> </div>
+     <div class="col-3">
+       <h3 class="small">Imperative</h3>
+       <div class="checkbox">
+	 <label><input type="checkbox" class="parent" data-group=".group3" /> Select all</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="imp-affirmative" type="checkbox" value="" class="group3" name="check[]"> Affirmative</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="imp-negative" type="checkbox" value="" class="group3" name="check[]"> Negative</label>
+       </div>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-1"> </div>
+     <div class="col-3">
+       <h3 class="small">Progressive</h3>
+       <div class="checkbox">
+	 <label><input type="checkbox" class="parent" data-group=".group4" /> Select all</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="pro-present" type="checkbox" value="" class="group4" name="check[]"> Present</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="pro-preterite" type="checkbox" value="" class="group4" name="check[]"> Preterite</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="pro-imperfect" type="checkbox" value="" class="group4" name="check[]"> Imperfect</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="pro-conditional" type="checkbox" value="" class="group4" name="check[]"> Conditional</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="pro-future" type="checkbox" value="" class="group4" name="check[]"> Future</label>
+       </div>
+     </div>
+     <div class="col-1"> </div>
+     <div class="col-3">
+       <h3 class="small">Perfect</h3>
+       <div class="checkbox">
+	 <label><input type="checkbox" class="parent" data-group=".group5" /> Select all</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-present" type="checkbox" value="" class="group5" name="check[]"> Present</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-preterite" type="checkbox" value="" class="group5" name="check[]"> Preterite</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-past" type="checkbox" value="" class="group5" name="check[]"> Past</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-conditional" type="checkbox" value="" class="group5" name="check[]"> Conditional</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-future" type="checkbox" value="" class="group5" name="check[]"> Future</label>
+       </div>
+     </div>
+     <div class="col-1"> </div>
+     <div class="col-3">
+       <h3 class="small">Perfect Subjunctive</h3>
+       <div class="checkbox">
+	 <label><input type="checkbox" class="parent" data-group=".group6"/> Select all</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-sub-present" type="checkbox" value="" class="group6" name="check[]"> Present</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-sub-past" type="checkbox" value="" class="group6" name="check[]"> Past</label>
+       </div>
+       <div class="checkbox">
+	 <label><input id="per-sub-future" type="checkbox" value="" class="group6" name="check[]"> Future</label>
+       </div>
+       
+     </div>
+   </div>
+ </div>
+ <div class="mt-3"></div>
+ <div class="container">
+   <div class="row">
+     <div class="col-4"> </div>
+     <div class="col-4">
+       <ul class="nav nav-pills nav-justified nav-fill">
+	 <li class="nav-item"><a class="btn btn-dark btn-block" role="button" href="index.html">
+	     <h3 class=small>Back</h3>
+	 </a></li>
+	 <li class="nav-item"><button class="btn btn-dark btn-block"
+				      id="confirm">
+	     				 <!--onclick="location.href='frequency.html';"-->
+	     <h3 class=small>Confirm</h3>
+	   </button></li>
+       </ul>
+     </div>
+     <div class="col-4"> </div>
+   </div>
+ </div>
+ <p id="para"></p>
+ <script src="js/checkAll.js"></script>
+ <script type="text/javascript">
+   var clicked = false;
+ </script>
+ <script>
+     $checkbox = $('input[type=checkbox]');
+     document.getElementById("confirm").setAttribute("disabled","true");
+     $checkbox.on('click', function(){
+     if ($("input:checkbox:checked").length > 0) {
+       document.getElementById("confirm").removeAttribute("disabled");
+     }
+     else{
+       document.getElementById("confirm").setAttribute("disabled","true");
+     }
+     });
+     allCheck = $("#allSel");
+     allCheck.on('click', function(){
+     if ($("input:checkbox:checked").length > 0) {
+       document.getElementById("confirm").removeAttribute("disabled");
+     }
+     else{
+       document.getElementById("confirm").setAttribute("disabled","true");
+     }
+     });
+ </script>
+ <script>
+         var GET = {};
+         var queryString = window.location.search.replace(/^\?/, '');
+         queryString.split(/\&/).forEach(function(keyValuePair) {
+         var paramName = keyValuePair.replace(/=.*$/, ""); // some decoding is probably necessary
+         var paramValue = keyValuePair.replace(/^[^=]*\=/, ""); // some decoding is probably necessary
+         GET[paramName] = paramValue;
+         });
+         var freq = GET["frequency"];
+  
+	 var passItOn = ""
+	 
+	 $sneak = $('#confirm');
+	 $sneak.on('click', function(){
+	 
+	 if ($('input[id="ind-present"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="ind-preterite"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="ind-imperfect"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="ind-conditional"]').prop('checked')) {
+	 passItOn+"1"
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="ind-future"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="sub-present"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="sub-imperfect"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="sub-imperfect2"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="sub-future"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="imp-affirmative"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="imp-negative"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="pro-present"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="pro-preterite"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="pro-imperfect"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="pro-conditional"]').prop('checked')) {
+	 passItOn+"1"
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="pro-future"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-present"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-preterite"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-past"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-conditional"]').prop('checked')) {
+	 passItOn+"1"
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-future"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-sub-present"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-sub-past"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if ($('input[id="per-sub-future"]').prop('checked')) {
+	 passItOn = passItOn+"1"
+	 }
+	 else {
+	 passItOn = passItOn+"0"
+	 }
+	 if (freq === "500") {
+	   window.location = "./conjugate.html?tenses="+passItOn
+	 }
+	 else {
+	   window.location = "./conjugate-"+freq+".html?tenses="+passItOn
+	 }
+         });
+ </script>
+ </body>
+</html>

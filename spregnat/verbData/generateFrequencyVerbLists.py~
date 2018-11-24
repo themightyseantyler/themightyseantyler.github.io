@@ -1,0 +1,12 @@
+import os, sys
+
+frequencyListFile = sys.argv[1]
+vocabListFile = sys.argv[2]
+verbs = []
+#with open(vocabListFile, "r") as verbList:
+#    for entry in verbList:
+#        verbs.append(entry.strip())
+with open(frequencyListFile, "r") as frequencyList:
+    for line in frequencyList:
+        word = line.split(" ")[3]
+        print(word)

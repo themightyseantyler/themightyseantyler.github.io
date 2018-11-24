@@ -1,0 +1,1 @@
+* TODO add error message if no selection made or only allow button to be active once that's the case.
