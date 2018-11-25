@@ -34,7 +34,7 @@
 	<div class="col-4">
 	  <div id="form1" class="input-group mb-3">
 	    <div class="input-group-prepend">
-	      <button class="btn btn-dark" type="button" onclick="checkInput()" >Check</button>
+	      <button class="btn btn-dark" id="confirm" accesskey="c" type="button" onclick="checkInput()" >Check</button>
 	    </div>
 	    <input id="input1" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
 	  </div>
@@ -45,22 +45,46 @@
       <div class="row">
 	<div class="col-4"> </div>
 	<div class="col-2"> 
-	  <button class="btn btn-dark btn-block" onclick="giveUp()">
+	  <button class="btn btn-dark btn-block" id="giveup" onclick="giveUp()">
 	    <h3 class="small">Give up</h3>
 	    </button>
 	</div>
 	<div class="col-2">
-	  <button class="btn btn-dark btn-block" onclick="myFunction()">
+	  <button class="btn btn-dark btn-block" id="next"
+		  onclick="myFunction()">
 	    <h3 class="small">Next</h3>
 	  </button>
 	</div>
 	<div class="col-4"> </div>
+      </div>
+      <div class="mt-5"></div>
+      <div class="row">
+	<button style="height: 2.0em" class="btn btn-dark" onclick="window.location = './frequency.html'">
+	  <p style="font-size: 0.9em"> Change choices </p>
+	</button>
       </div>
     </div>
 
 
 
     <script>
+      $('input[type="text"]').get(0).focus();
+
+      var input = document.getElementById("input1");
+      input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          document.getElementById("next").click();
+        } 
+        if (event.keyCode === 16) {
+          document.getElementById("confirm").click();
+        }
+        if (event.keyCode === 27) {
+          document.getElementById("giveup").click();
+        }
+      });
+
+      
        var GET = {};
        var queryString = window.location.search.replace(/^\?/, '');
        queryString.split(/\&/).forEach(function(keyValuePair) {

@@ -1,0 +1,10 @@
+#!/bin/bash
+for file in rawData/*.txt
+do
+    if [-s $file]
+    then
+	echo "File is fullsome."
+    else
+	echo "File is a collapsed lung of a cunt."
+    fi
+done

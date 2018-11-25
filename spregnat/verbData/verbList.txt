@@ -108,7 +108,6 @@ aprovechar
 apuntar
 arder
 arreglar
-arrepentir
 arriesgar
 arrojar
 asegurar
@@ -245,7 +244,6 @@ atar
 atontar
 atornillar
 atrasar
-atrever
 atrincherar
 atropellar
 aturdir
@@ -901,7 +899,6 @@ enganchar
 engañar
 engendrar
 englobar
-engrapar
 engrasar
 engullir
 enharinar
@@ -1683,7 +1680,6 @@ puntear
 quebrantar
 quebrar
 quedar
-quejar
 quemar
 querer
 quitar
@@ -1820,7 +1816,6 @@ robar
 rodar
 romper
 roncar
-rebelar
 reconstruir
 recostar
 recurrir
@@ -2052,7 +2047,6 @@ transfigurar
 transformar
 transmitir
 transpirar
-transponer
 transportar
 traquetear
 trasladar

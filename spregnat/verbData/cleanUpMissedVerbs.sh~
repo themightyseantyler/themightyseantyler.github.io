@@ -1,0 +1,9 @@
+#!/bin/bash
+for file in rawData/*.txt
+do
+    if ! [ -s $file ]
+    then
+	filename=$(basename -- "$file")
+	echo "${filename%.*}"
+    fi
+done
