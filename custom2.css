@@ -1,5 +1,5 @@
 body{
-    background: #9c4974;
+    background: #413F51;
     padding-bottom: 50px;
 }
 
@@ -13,7 +13,7 @@ body, input, select, textarea {
 
 
 h2 {
-    color:#d4d4dd;
+    color: #EFF6EE;
 }
 hr {
   -moz-border-bottom-colors: none;
@@ -21,8 +21,8 @@ hr {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  border-color: #d6a8c0;
-  color: #d6a8c0;
+  border-color: #EFF6EE;
+  color: #EFF6EE;
   border-style: solid none;
   border-width: 1px 0;
   margin: 18px 0;
@@ -37,7 +37,7 @@ hr {
 
 .btn-default {
   color: #333;
-  background-color: #c17b9f;
+  background-color: #EFF6EE;
   border-color: #404040;
 }
 
@@ -46,7 +46,7 @@ hr {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333;
-  background-color: #8b4167;
+  background-color: #727689;
   border-color: #2d2d2d;
 }
 
@@ -55,7 +55,7 @@ hr {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #d6a8c0;
+  background-color: #EFF6EE;
   border: 1px solid #434356;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
@@ -72,7 +72,7 @@ hr {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #e2e2e9;
+  background-color: #c7d1d1;
   border: 1px solid #c17b9f;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
