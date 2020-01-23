@@ -14,7 +14,8 @@
   <body>
     <h2 align="center">Schedule 2020</h2>
      <div class="container" >
-       <table class="table-responsive">
+       <div class="table-responsive">
+	 <table class="table">
 	 <thead>
 	   <tr>
              <th><h3>Conference</h3></th>
@@ -59,6 +60,7 @@
 	   
 	 </tbody>
        </table>
+       </div>
      </div>
      <script>
        // Set the date we're counting down to
@@ -99,8 +101,7 @@
        document.getElementById("demo3").innerHTML = days3 + "w " + hours3 + "d ";
        document.getElementById("demo4").innerHTML = days4 + "w " + hours4 + "d ";
        document.getElementById("demo5").innerHTML = days5 + "w " + hours5 + "d ";
-       document.getElementById("now").innerHTML = date;
-       document.getElementById("then").innerHTML = thendate;
+      
        // If the count down is over, write some text 
        if (distance1 < 0) {
 		       clearInterval(x);
