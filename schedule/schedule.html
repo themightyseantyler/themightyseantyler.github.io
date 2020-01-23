@@ -19,33 +19,110 @@
 	   <tr>
              <th><h3>Conference</h3></th>
              <th><h3>Date</h3></th>
-             <th><h3>Work</h3></th>
+             <th><h3>Project</h3></th>
+	     <th><h3>Time Left</h3></th>
 	   </tr>
+
 	 </thead>
 	 <tbody>
+	   <br>
 	   <tr class="success">
              <td>COLING</td>
              <td>08.04.20</td>
              <td>Open-Shut</td>
-	   </tr>
-	   <tr class="danger">
-             <td>EMNLP</td>
-             <td>11.05.20</td>
-             <td>?</td>
+	     <td><p id="demo1"></p></td>
 	   </tr>
 	   <tr class="info">
-             <td>Negative Results in NLP</td>
-             <td>??.05.20</td>
-             <td>UPoS Tags</td>
+             <td>EMNLP</td>
+             <td>11.05.20</td>
+             <td>Delexicalised Syntax Complexity</td>
+	     <td><p id="demo2"></p></td>
+	   </tr>
+	   <tr class="danger">
+             <td>Negative Results</td>
+             <td><i>11.05.20</i></td>
+             <td>UPoS Tags Inefficacy</td>
+	     <td><p id="demo3"></p></td>
 	   </tr>
 	   <tr class="warning">
+             <td>UD Workshop</td>
+             <td>15.05.20</td>
+             <td>Self-training</td>
+	     <td><p id="demo4"></p></td>
+	   </tr>
+	   <tr style="background:#c2c2d6">
              <td>AACL</td>
              <td>26.06.20</td>
-             <td>?</td>
+             <td>Finetune Delexicalised Parsers; Layered Pretraining</td>
+	     <td><p id="demo5"></p></td>
 	   </tr>
 	   
 	 </tbody>
        </table>
      </div>
+     <script>
+       // Set the date we're counting down to
+       var countDownDate1 = new Date("Apr 8, 2020 23:59:59").getTime();
+       var countDownDate2 = new Date("May 11, 2020 23:59:59").getTime();
+       var countDownDate3 = new Date("May 11, 2020 23:59:59").getTime();
+       var countDownDate4 = new Date("May 15, 2020 23:59:59").getTime();
+       var countDownDate5 = new Date("June 26, 2020 23:59:59").getTime();
+
+       // Update the count down every 1 second
+       var x = setInterval(function() {
+
+       // Get today's date and time
+       var now = new Date().getTime();
+       var date = new Date();
+       var thendate = new Date("Apr 8, 2020 23:59:59");
+       // Find the distance between now and the count down date
+       var distance1 = countDownDate1 - now;
+       var distance2 = countDownDate2 - now;
+       var distance3 = countDownDate3 - now;
+       var distance4 = countDownDate4 - now;
+       var distance5 = countDownDate5 - now;
+    
+       // Time calculations for days, hours, minutes and seconds
+       var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24) /7);
+       var hours1 = Math.round((distance1 / (1000*60*60*24))-days1*7);
+       var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24) /7);
+       var hours2 = Math.round((distance2 / (1000*60*60*24))-days2*7);
+       var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24) /7);
+       var hours3 = Math.round((distance3 / (1000*60*60*24))-days3*7);
+       var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24) /7);
+       var hours4 = Math.round((distance4 / (1000*60*60*24))-days4*7);
+       var days5 = Math.floor(distance5 / (1000 * 60 * 60 * 24) /7);
+       var hours5 = Math.round((distance5 / (1000*60*60*24))-days5*7);
+       // Output the result in an element with id="demo"
+       document.getElementById("demo1").innerHTML = days1 + "w " + hours1 + "d ";
+       document.getElementById("demo2").innerHTML = days2 + "w " + hours2 + "d ";
+       document.getElementById("demo3").innerHTML = days3 + "w " + hours3 + "d ";
+       document.getElementById("demo4").innerHTML = days4 + "w " + hours4 + "d ";
+       document.getElementById("demo5").innerHTML = days5 + "w " + hours5 + "d ";
+       document.getElementById("now").innerHTML = date;
+       document.getElementById("then").innerHTML = thendate;
+       // If the count down is over, write some text 
+       if (distance1 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo1").innerHTML = "EXPIRED";
+		       }
+       if (distance2 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo2").innerHTML = "EXPIRED";
+		       }
+       if (distance3 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo3").innerHTML = "EXPIRED";
+		       }
+       if (distance4 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo4").innerHTML = "EXPIRED";
+		       }
+       if (distance5 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo5").innerHTML = "EXPIRED";
+		       }
+		       }, 1000);
+</script>
   </body>
 </html>
