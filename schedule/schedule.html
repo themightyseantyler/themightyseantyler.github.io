@@ -64,6 +64,12 @@
              <td><p style="color:#fdfdff">Self-training</p></td>
 	     <td><p id="demo4" align="right"></p></td>
 	   </tr>
+	    <tr class="default">
+             <td><p style="color:#fdfdff">CoNLL</p></td>
+             <td><p style="color:#fdfdff">05 June</p></td>
+             <td><p style="color:#fdfdff"></p></td>
+	     <td><p id="demo6" align="right"></p></td>
+	   </tr>
 	   <tr class="default"           >
              <td><p style="color:#fdfdff">AACL</p></td>
              <td><p style="color:#fdfdff">26 Jun</p></td>
@@ -82,6 +88,7 @@
        var countDownDate3 = new Date("May 11, 2020 23:59:59").getTime();
        var countDownDate4 = new Date("May 15, 2020 23:59:59").getTime();
        var countDownDate5 = new Date("June 26, 2020 23:59:59").getTime();
+       var countDownDate6 = new Date("June 05, 2020 23:59:59").getTime();
 
        // Update the count down every 1 second
        var x = setInterval(function() {
@@ -96,6 +103,7 @@
        var distance3 = countDownDate3 - now;
        var distance4 = countDownDate4 - now;
        var distance5 = countDownDate5 - now;
+       var distance6 = countDownDate6 - now;
     
        // Time calculations for days, hours, minutes and seconds
        var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24) /7);
@@ -108,12 +116,15 @@
        var hours4 = Math.round((distance4 / (1000*60*60*24))-days4*7);
        var days5 = Math.floor(distance5 / (1000 * 60 * 60 * 24) /7);
        var hours5 = Math.round((distance5 / (1000*60*60*24))-days5*7);
+       var days6 = Math.floor(distance6 / (1000 * 60 * 60 * 24) /7);
+       var hours6 = Math.round((distance6 / (1000*60*60*24))-days6*7);
        // Output the result in an element with id="demo"
        document.getElementById("demo1").innerHTML = days1 + "w " + hours1 + "d ";
        document.getElementById("demo2").innerHTML = days2 + "w " + hours2 + "d ";
        document.getElementById("demo3").innerHTML = days3 + "w " + hours3 + "d ";
        document.getElementById("demo4").innerHTML = days4 + "w " + hours4 + "d ";
        document.getElementById("demo5").innerHTML = days5 + "w " + hours5 + "d ";
+       document.getElementById("demo6").innerHTML = days6 + "w " + hours6 + "d ";
       
        // If the count down is over, write some text 
        if (distance1 < 0) {
