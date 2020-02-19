@@ -147,7 +147,11 @@
 		       clearInterval(x);
 		       document.getElementById("demo5").innerHTML = "EXPIRED";
 		       }
-		       }, 1000);
+       if (distance6 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo6").innerHTML = "EXPIRED";
+		       }
+		       }, 1000);   		       
 </script>
   </body>
 </html>
