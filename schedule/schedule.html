@@ -107,17 +107,17 @@
     
        // Time calculations for days, hours, minutes and seconds
        var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24) /7);
-       var hours1 = Math.round((distance1 / (1000*60*60*24))-days1*7);
+       var hours1 = Math.floor((distance1 / (1000*60*60*24))-days1*7);
        var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24) /7);
-       var hours2 = Math.round((distance2 / (1000*60*60*24))-days2*7);
+       var hours2 = Math.floor((distance2 / (1000*60*60*24))-days2*7);
        var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24) /7);
-       var hours3 = Math.round((distance3 / (1000*60*60*24))-days3*7);
+       var hours3 = Math.floor((distance3 / (1000*60*60*24))-days3*7);
        var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24) /7);
-       var hours4 = Math.round((distance4 / (1000*60*60*24))-days4*7);
+       var hours4 = Math.floor((distance4 / (1000*60*60*24))-days4*7);
        var days5 = Math.floor(distance5 / (1000 * 60 * 60 * 24) /7);
-       var hours5 = Math.round((distance5 / (1000*60*60*24))-days5*7);
+       var hours5 = Math.floor((distance5 / (1000*60*60*24))-days5*7);
        var days6 = Math.floor(distance6 / (1000 * 60 * 60 * 24) /7);
-       var hours6 = Math.round((distance6 / (1000*60*60*24))-days6*7);
+       var hours6 = Math.floor((distance6 / (1000*60*60*24))-days6*7);
        // Output the result in an element with id="demo"
        document.getElementById("demo1").innerHTML = days1 + "w " + hours1 + "d ";
        document.getElementById("demo2").innerHTML = days2 + "w " + hours2 + "d ";
