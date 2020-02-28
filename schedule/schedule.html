@@ -47,28 +47,47 @@
 	     <td><p id="demo1" align="right"></p></td>
 	   </tr>
 	   <tr class="default">
-             <td><p style="color:#fdfdff">EMNLP</p></td>
-             <td><p style="color:#fdfdff">11 May</p></td>
-             <td><p style="color:#fdfdff">Delexicalised Syntax<br>Complexity</p></td>
-	     <td><p id="demo2" align="right"></p></td>
+             <td><p style="color:#fdfdff">IWPT</p></td>
+             <td><p style="color:#fdfdff">10 Apr</p></td>
+             <td><p style="color:#fdfdff"></p></td>
+	     <td><p id="demo8" align="right"></p></td>
 	   </tr>
 	   <tr class="default">
-             <td><p style="color:#fdfdff">Negative<br>Results</p></td>
-             <td><p style="color:#fdfdff"><i>11 May</i></p></td>
-             <td><p style="color:#fdfdff">UPoS Tags <br>Inefficacy</p></td>
-	     <td><p id="demo3" align="right"></p></td>
+             <td><p style="color:#fdfdff">EMNLP</p></td>
+             <td><p style="color:#fdfdff">11 May</p></td>
+             <td><p style="color:#fdfdff"></p></td>
+	     <td><p id="demo2" align="right"></p></td>
 	   </tr>
+
 	   <tr class="default">
              <td><p style="color:#fdfdff">UD<br>Workshop</p></td>
              <td><p style="color:#fdfdff">15 May</p></td>
-             <td><p style="color:#fdfdff">Self-training</p></td>
+             <td><p style="color:#fdfdff"><strike>Self-training</strike></p></td>
 	     <td><p id="demo4" align="right"></p></td>
 	   </tr>
+	   <tr class="default">
+             <td><p style="color:#fdfdff">SLSP</p></td>
+             <td><p style="color:#fdfdff">01 June</p></td>
+             <td><p style="color:#fdfdff">Delexicalised Syntax<br>Complexity</p></td>
+	     <td><p id="demo9" align="right"></p></td>
+            </tr>
 	    <tr class="default">
              <td><p style="color:#fdfdff">CoNLL</p></td>
              <td><p style="color:#fdfdff">05 June</p></td>
-             <td><p style="color:#fdfdff"></p></td>
+             <td><p style="color:#fdfdff">UPoS Tags <br>Inefficacy</p></td>
 	     <td><p id="demo6" align="right"></p></td>
+            </tr>
+	   <tr class="default">
+             <td><p style="color:#fdfdff">Negative<br>Results</p></td>
+             <td><p style="color:#fdfdff"><i>05 June</i></p></td>
+             <td><p style="color:#fdfdff"></p></td>
+	     <td><p id="demo3" align="right"></p></td>
+	   </tr>
+	   <tr class="default">
+             <td><p style="color:#fdfdff">SustaiNLP</p></td>
+             <td><p style="color:#fdfdff"><i>05 June</i></p></td>
+             <td><p style="color:#fdfdff">Distillation</p></td>
+	     <td><p id="demo7" align="right"></p></td>
 	   </tr>
 	   <tr class="default"           >
              <td><p style="color:#fdfdff">AACL</p></td>
@@ -89,7 +108,8 @@
        var countDownDate4 = new Date("May 15, 2020 23:59:59").getTime();
        var countDownDate5 = new Date("June 26, 2020 23:59:59").getTime();
        var countDownDate6 = new Date("June 05, 2020 23:59:59").getTime();
-
+       var countDownDate7 = new Date("June 01, 2020 23:59:59").getTime();
+       var countDownDate8 = new Date("April 10, 2020 23:59:59").getTime();
        // Update the count down every 1 second
        var x = setInterval(function() {
 
@@ -104,7 +124,8 @@
        var distance4 = countDownDate4 - now;
        var distance5 = countDownDate5 - now;
        var distance6 = countDownDate6 - now;
-    
+       var distance7 = countDownDate7 - now;
+       var distance8 = countDownDate8 - now;
        // Time calculations for days, hours, minutes and seconds
        var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24) /7);
        var hours1 = Math.floor((distance1 / (1000*60*60*24))-days1*7);
@@ -118,14 +139,21 @@
        var hours5 = Math.floor((distance5 / (1000*60*60*24))-days5*7);
        var days6 = Math.floor(distance6 / (1000 * 60 * 60 * 24) /7);
        var hours6 = Math.floor((distance6 / (1000*60*60*24))-days6*7);
+       var days7 = Math.floor(distance7 / (1000 * 60 * 60 * 24) /7);
+       var hours7 = Math.floor((distance7 / (1000*60*60*24))-days7*7);
+       var days8 = Math.floor(distance8 / (1000 * 60 * 60 * 24) /7);
+       var hours8 = Math.floor((distance8 / (1000*60*60*24))-days8*7);
+       
        // Output the result in an element with id="demo"
        document.getElementById("demo1").innerHTML = days1 + "w " + hours1 + "d ";
        document.getElementById("demo2").innerHTML = days2 + "w " + hours2 + "d ";
-       document.getElementById("demo3").innerHTML = days3 + "w " + hours3 + "d ";
+       document.getElementById("demo3").innerHTML = days6 + "w " + hours6 + "d ";
        document.getElementById("demo4").innerHTML = days4 + "w " + hours4 + "d ";
        document.getElementById("demo5").innerHTML = days5 + "w " + hours5 + "d ";
        document.getElementById("demo6").innerHTML = days6 + "w " + hours6 + "d ";
-      
+       document.getElementById("demo7").innerHTML = days6 + "w " + hours6 + "d ";
+       document.getElementById("demo8").innerHTML = days8 + "w " + hours8 + "d ";
+       document.getElementById("demo9").innerHTML = days7 + "w " + hours7 + "d ";
        // If the count down is over, write some text 
        if (distance1 < 0) {
 		       clearInterval(x);
@@ -150,6 +178,22 @@
        if (distance6 < 0) {
 		       clearInterval(x);
 		       document.getElementById("demo6").innerHTML = "EXPIRED";
+		       }
+       if (distance7 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo7").innerHTML = "EXPIRED";
+		       }
+       if (days8 > 52) {
+		       clearInterval(x);
+		       document.getElementById("demo8").innerHTML = "<i>UNK</i>";
+		       }
+       if (days3 > 52) {
+		       clearInterval(x);
+		       document.getElementById("demo3").innerHTML = "<i>UNK</i>";
+		       }
+       if (distance8 < 0) {
+		       clearInterval(x);
+		       document.getElementById("demo8").innerHTML = "EXPIRED";
 		       }
 		       }, 1000);   		       
 </script>
